@@ -1,0 +1,90 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<body>
+<style>
+    .calculator{
+        height: 200px; 
+        width: 200px;
+        border: 1px solid #000;
+        background-color: rgba(15, 25, 74, 0.76);
+    }
+  
+    .first_row {  
+        display: flex;  
+        justify-content: space-between;  
+    }  
+  
+    .first_row button { 
+        margin-top: 10px; 
+        width: 33.33%; 
+        height: 50px;
+        background-color: rgba(67, 39, 253, 0.475);
+        color: azure;
+        font-size: 25px;
+        border-radius: 10px;
+    }
+
+    .second_row{ 
+        display: flex;  
+        justify-content: space-between;  
+    }
+    
+    .second_row button {  
+        width: 33.33%; 
+        height: 50px;
+        background-color: rgba(67, 39, 253, 0.475);
+        color: azure;
+        font-size: 25px;
+        border-radius: 10px;
+    }
+
+    #input1{
+        border: 2px solid rgb(67, 56, 185); 
+        height: 20px;
+        width: 176px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #f0f0f0; 
+    }
+    #input2{
+        border: 2px solid rgb(67, 56, 185);   
+        height: 20px;
+        padding: 10px;
+        width: 176px;
+        border-radius: 5px;
+        background-color: #f0f0f0;  
+    }
+</style>
+  
+<h2>Calculator</h2>  
+<div class="calculator">
+        <input type="text" id="input1" placeholder="输入值1">  
+        <input type="text" id="input2" placeholder="输入值2">
+
+    <div class="first_row">
+        <button onclick="add()">+</button> 
+        <button onclick="minus()">-</button> 
+        <button onclick="multiply()">*</button>
+    </div>
+
+    <div class="second_row">
+        <button onclick="divide()">/</button> 
+        <button onclick="mod()">%</button>
+        <button onclick="showHistory()">ans</button> 
+    </div>
+    
+    
+</div>
+ 
+  
+<p id="result"></p>  
+  
+<script src="main.js"></script>  
+  
+</body>  
+</html>
